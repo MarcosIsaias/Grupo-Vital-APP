@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                >
+
+                <FrameLayout
+                    android:id="@+id/CalcIMC"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                    <ImageButton
+                        android:id="@+id/imcButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corner_20dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imc" />
+
+                    <TextView
+                        android:id="@+id/imcText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Calculador I.M.C"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/CalcIAC"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/iacButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corner_20dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iac"
+                        android:layout_gravity="end"/>
+
+                    <TextView
+                        android:id="@+id/iacText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="130dp"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="20dp"
+                        android:text="Calculador I.A.C"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <FrameLayout
+                    android:id="@+id/CalcPH"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                    <ImageButton
+                        android:id="@+id/phButton"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corner_20dp"
+                        android:padding="20dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ph" />
+
+                    <TextView
+                        android:id="@+id/phText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="130dp"
+                        android:text="Calculador P.H"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        tools:ignore="MissingConstraints" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/InfIMC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/imcTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center"
+                    android:text="I.M.C - Indice de Massa Corporal"
+                    android:textColor="#CC9F00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/imcInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/lined_rounded_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="40dp"
+                    android:text="@string/imcInformation"
+                    android:textAlignment="center"
+                    android:textColor="#CC9F00" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/InfIAC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/iacTitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:paddingHorizontal="40dp"
+                    android:gravity="center"
+                    android:text="I.A.C - Indice de Adiposidade Corporal"
+                    android:textColor="#CC9F00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/iacInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/lined_rounded_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="40dp"
+                    android:text="@string/iacInformation"
+                    android:textAlignment="center"
+                    android:textColor="#CC9F00" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/InfPH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/phTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center"
+                    android:text="P.H - Pesagem Hidrostática"
+                    android:textColor="#CC9F00"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/phInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/lined_rounded_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="40dp"
+                    android:text="@string/phInformation"
+                    android:textAlignment="center"
+                    android:textColor="#CC9F00" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

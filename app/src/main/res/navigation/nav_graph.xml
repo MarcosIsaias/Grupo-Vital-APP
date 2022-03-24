@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginFragment">
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.vitalapp.LoginFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.vitalapp.FirstFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.vitalapp.SecondFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_ImcFragment"
+            app:destination="@id/ImcFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_IacFragment"
+            app:destination="@id/IacFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_PhFragment"
+            app:destination="@id/PhFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ImcFragment"
+        android:name="com.example.vitalapp.ImcFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_imc">
+        <action
+            android:id="@+id/action_ImcFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/IacFragment"
+        android:name="com.example.vitalapp.IacFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_iac">
+        <action
+            android:id="@+id/action_IacFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhFragment"
+        android:name="com.example.vitalapp.PhFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_ph">
+        <action
+            android:id="@+id/action_PhFragment_to_ResultFragment"
+            app:destination="@id/ResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ResultFragment"
+        android:name="com.example.vitalapp.ResultFragment"
+        android:label="VitalApp"
+        tools:layout="@layout/fragment_resultado">
+
+    </fragment>
+
+</navigation>
