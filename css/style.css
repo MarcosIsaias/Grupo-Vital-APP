@@ -7,31 +7,33 @@ body {
 .bodySection {
     background-color: white;
     width: 100%;
+    height: auto;
 }
 
 .adjust {
     padding: 1%;
 }
 
-
-
-
 header {
     background-image: url("../img/header/header02.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 140px;
+    height: 200px;
     border-radius: 11px;
 }
 
 main {
     width: 70%;
+    height: auto;
 }
 
 section {
     width: 30%;
     float: right;
     border-left: #b4b1b1 1px solid;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: auto;
 }
 
 footer {
@@ -49,4 +51,23 @@ footer {
     font-family: 'Roboto', sans-serif;
     height: 130px;
     width: 184px;
+}
+
+.boxInfomation {
+    height: 127px;
+    width: 230px;
+    border: #FF6B00 1px solid;
+    border-radius: 0 23px 0 23px;
+}
+
+.title {
+    font-size: 0.8em;
+    color: #FF6B00;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 0.7rem;
+    color: #FF6B00;
+    font-weight: 600;
 }
