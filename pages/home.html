@@ -14,7 +14,7 @@
     <title>GRUPO SAÚDE VITAL</title>
 </head>
 
-<body class="bg-danger">
+<body class="backgroundOrange">
     <!--bodySection, box do template do site-->
     <div class="bodySection">
         <!--adjust, ajuste do padding interno dos elementos dentro da box-->
@@ -24,22 +24,23 @@
             </header>
             <!--mt-3, margin top dos elementos internos-->
             <div class="mt-3">
-                <section>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vitae dolores, corrupti iure numquam
-                    praesentium voluptas eius ab id. Itaque id mollitia omnis animi repudiandae magnam sit dolorem.
-                    Laudantium, eius?
-
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, porro voluptas minima commodi
-                    officia expedita nisi fugiat dignissimos facere nesciunt sunt error ea totam nemo ipsum qui iusto
-                    voluptatibus similique!
-
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, adipisci? Ex magni ratione
-                    molestiae dolorem nesciunt sed eveniet maxime necessitatibus, quae possimus corporis et adipisci
-                    quidem doloribus voluptatibus eum sit impedit recusandae modi explicabo temporibus ab libero at?
-                    Unde consequatur illo expedita! Laboriosam, id? Ducimus illo exercitationem quae nisi obcaecati odit
-                    iusto excepturi consequatur ab consequuntur vel iste, a amet velit animi vitae, nostrum voluptatibus
-                    quidem.
+                <!--Menu de informações do usuário-->
+                <section class="text-center">
+                    <!--Imagem do avatar do usuário-->
+                    <img src="../img/avatar/avatar01.jpg" class="circle responsive-img"
+                        alt="Imagem do avatar do usuário" width="40%">
+                        <!--Informações pessoais, como nome, gênero, altura e idade-->
+                        <h6>Matheus K. Rother</h6>
+                        <br>
+                        Masculino
+                        <!--logo do genero do usuário-->
+                        <img src="../img/genero/masculino.png" alt="Imagem do genero masculino" width="5%">
+                        <br>
+                        <br>
+                        Altura: 1.90 cm
+                        <br>
+                        <br>
+                        Idade: 65 anos
                 </section>
                 <main>
                     <!--Grid, dos 3 principais operações da aplicação [I.M.C, I.A.C e P.H]-->
@@ -64,7 +65,7 @@
                     <!--Grid de Informações sobre as operações-->
                     <div class="row col-10 offset-1 text-center">
                         <!--Box I , Informação sobre o I.M.C-->
-                        <div class="boxInfomation col-sm">
+                        <div class="boxInfomation exclamation col-sm">
                             <h6 class="title">I.M.C<br>
                                 (Indice de Massa Corporal)
                             </h6>
@@ -75,7 +76,7 @@
                         </div>
 
                         <!--Box II , Informação sobre o I.A.C-->
-                        <div class="boxInfomation col-sm offset-sm-1">
+                        <div class="boxInfomation exclamation col-sm offset-sm-1">
                             <h6 class="title">I.A.C<br>
                                 (Indice de Adiposidade Corporal)
                             </h6>
@@ -86,7 +87,7 @@
                         </div>
 
                         <!--Box III , Informação sobre o P.H-->
-                        <div class="boxInfomation col-sm offset-sm-1">
+                        <div class="boxInfomation exclamation col-sm offset-sm-1">
                             <h6 class="title">P.H<br>
                                 (Pesagem Hidrostática)
                             </h6>
