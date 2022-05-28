@@ -12,7 +12,7 @@ body {
 }
 
 .bodySection {
-    background-color: white;
+    background-color: #ffffff;
     width: 100%;
     height: auto;
 }
@@ -85,10 +85,11 @@ footer {
     background-size: 12%;
 }
 
+/* estilo de box de operações do IMC, IAC e PH*/
 .boxOperation {
     background-color:#FF6B00;
     height: 8.5rem;
-    width: 100%;
+    width: 98.5%;
     border-radius: .6em;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -97,3 +98,54 @@ footer {
 .textPerson {
     font-size: 1.5rem;
 }
+
+.box-result {
+    border-radius: 1.5em;
+    border: #FF6B00 0.1em solid;
+    height: 5rem;
+}
+
+/* ID de temas das fontes do texto dentro do box-result*/
+#theme-result-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#theme-result {
+    color: #FF6B00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Separador dentro da box*/
+.separator-box {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    border-right: #FF6B00 1px solid;
+}
+
+h6 {
+    font-family: 'Roboto' sans-serif;
+    font-weight: lighter;
+    color: #3C3A3A;
+}
+
+/* Box's das dicas de alimentos e  praticas fisicas */
+.box-dicas-1 {
+    background-color: #808080;
+    height: 8rem;
+    border-radius: .5em;
+}
+
+.box-dicas-2 {
+    background-color: #3C3A3A;
+    height: 8rem;
+    border-radius: .5em;
+}
+
+.text-link {
+    color: #ffffff;
+}
+

@@ -43,7 +43,6 @@
                     Idade: 65 anos
                 </section>
                 <main>
-
                     <div class="boxOperation text-center">
                         <h1>I.M.C</h1>
                         <p>[ ÍNDICE DE MASSA CORPORAL ]</p>
@@ -62,20 +61,22 @@
                                 <!--Formulario da altura-->
                                 <div class="form-group">
                                     <label for="Altura" class="textPerson">Altura</label>
-                                    <input type="number" class="form-control amber darken-4" id="Altura">
+                                    <input type="number" class="form-control amber darken-4 rounded" id="Altura"
+                                        maxlength="4" minlength="4" step="0.01">
                                 </div>
 
                                 <!--Formulario do peso-->
                                 <div class="form-group">
                                     <label for="Peso" class="textPerson">Peso</label>
-                                    <input type="number" class="form-control amber darken-4" id="Peso">
+                                    <input type="number" class="form-control amber darken-4 rounded" id="Peso"
+                                        maxlength="4" minlength="4" step="0.01">
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    <!--Botão de Calcular-->
-                    <div class="col-6 offset-5">
-                        <input type="submit" class="waves-effect waves-light amber darken-4  btn" value="CALCULAR">
+                        <!--Botão de Calcular-->
+                        <div class="col-6 offset-5">
+                            <input type="submit" class="waves-effect waves-light amber darken-4  btn" value="CALCULAR">
+                        </div>
                     </div>
                 </main>
             </div>
