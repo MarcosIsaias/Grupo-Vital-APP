@@ -43,7 +43,7 @@
                     Idade: 65 anos
                 </section>
                 <main>
-
+                    <!--DESENVOLVIDO POR ARTHUR CHAVES - UNS DOS RESPONSAVEIS PELA PARTE DO FRONT-END-->
                     <div class="boxOperation text-center">
                         <h1>I.A.C</h1>
                         <p>[ ÍNDICE DE ADPOSIDADE CORPORAL ]</p>

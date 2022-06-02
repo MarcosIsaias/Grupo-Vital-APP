@@ -43,7 +43,7 @@
                     Idade: 65 anos
                 </section>
                 <main>
-
+                    <!--DESENVOLVIDO POR ARTHUR CHAVES - UNS DOS RESPONSAVEIS PELA PARTE DO FRONT-END-->
                     <div class="boxOperation text-center">
                         <h1>P.H</h1>
                         <p>[ PESAGEM HIDROSTÁTICA ]</p>
